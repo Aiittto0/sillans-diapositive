@@ -207,6 +207,17 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .ty-usage{font-size:11px;color:rgba(255,255,255,.68);line-height:1.5}
 .ty-abc{font-size:10px;color:rgba(255,255,255,.32);margin-top:9px;line-height:1.7;letter-spacing:.05em;word-break:break-all}
 
+/* S11 FIGMA */
+#s11{background:#111c24}
+.figma-layout{display:flex;gap:44px;width:100%;max-width:1200px;align-items:center}
+.figma-text{display:flex;flex-direction:column;gap:12px;flex:1}
+.fig-item{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:15px 18px}
+.fig-n{font-family:'Marky',sans-serif;font-size:30px;color:var(--s);opacity:.3;line-height:1;flex-shrink:0;width:32px}
+.fig-item strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
+.fig-item span{font-size:12px;color:rgba(255,255,255,.68);line-height:1.4}
+.figma-img{flex:1.6;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.1);flex-shrink:0;align-self:stretch;display:flex}
+.figma-img img{width:100%;object-fit:cover;display:block}
+
 /* APP PHONE */
 #app-phone{position:fixed;right:72px;top:50%;transform:translateY(-50%);z-index:50;opacity:0;pointer-events:none;transition:opacity .5s var(--e)}
 #app-phone.show{opacity:1;pointer-events:all}
@@ -222,10 +233,10 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .uxd{width:6px;height:6px;border-radius:50%;background:var(--s);margin-top:6px;flex-shrink:0}
 .uxt strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
 .uxt span{font-size:12px;color:rgba(255,255,255,.72);line-height:1.4}
-#s11,#s12,#s13,#s14{background:#0d1a22}
+#s12,#s13,#s14,#s15{background:#0d1a22}
 
-/* S15 CONCLUSION */
-#s15{background:var(--p);overflow:hidden}
+/* S16 CONCLUSION */
+#s16{background:var(--p);overflow:hidden}
 .conc{position:relative;z-index:1;text-align:center;max-width:740px}
 .conc img{width:64px;margin-bottom:22px;filter:brightness(0) invert(1) opacity(.45)}
 .conc h1{font-family:'Marky',sans-serif;font-size:clamp(38px,5vw,74px);color:#fff;margin-bottom:16px;line-height:1}
@@ -537,8 +548,37 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S11 PARCOURS UTILISATEUR -->
-<div class="sl psl" id="s11">
+<!-- S11 FIGMA -->
+<div class="sl" id="s11">
+  <div class="tag" data-i="1" style="align-self:flex-start">Conception — Figma</div>
+  <h2 data-i="2" style="align-self:flex-start;margin-bottom:28px">Du wireframe<br>au <span class="acc">composant</span></h2>
+  <div class="figma-layout">
+    <div class="figma-text" data-i="3">
+      <div class="fig-item">
+        <div class="fig-n">01</div>
+        <div><strong>Wireframes basse fidélité</strong><span>Structure et hiérarchie des écrans · navigation validée</span></div>
+      </div>
+      <div class="fig-item">
+        <div class="fig-n">02</div>
+        <div><strong>Prototype interactif</strong><span>Flux complet cliquable · validation avant développement</span></div>
+      </div>
+      <div class="fig-item">
+        <div class="fig-n">03</div>
+        <div><strong>Composants réutilisables</strong><span>Boutons · cartes POI · footer · cohérence garantie</span></div>
+      </div>
+      <div class="fig-item">
+        <div class="fig-n">04</div>
+        <div><strong>Design tokens</strong><span>Couleurs · typographies · espacements · bridge design/code</span></div>
+      </div>
+    </div>
+    <div class="figma-img" data-i="4">
+      <img src="figma.png" alt="Figma — Le Sentier de Sillans">
+    </div>
+  </div>
+</div>
+
+<!-- S12 PARCOURS UTILISATEUR -->
+<div class="sl psl" id="s12">
   <div class="pinfo">
     <div class="tag" data-i="1">Parcours utilisateur</div>
     <h2 data-i="2">Du parking<br><span class="acc">à la cascade</span></h2>
@@ -549,8 +589,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S12 UX / UI -->
-<div class="sl psl" id="s12">
+<!-- S13 UX / UI -->
+<div class="sl psl" id="s13">
   <div class="pinfo">
     <div class="tag" data-i="1">UX &amp; UI — Justifications terrain</div>
     <h2 data-i="2">Pensé pour<br><span class="acc">la marche</span></h2>
@@ -561,8 +601,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S13 FONCTIONNALITES -->
-<div class="sl psl" id="s13">
+<!-- S14 FONCTIONNALITES -->
+<div class="sl psl" id="s14">
   <div class="pinfo">
     <div class="tag" data-i="1">Fonctionnalités uniques</div>
     <h2 data-i="2">Ce qui rend l'app<br><span class="acc">indispensable</span></h2>
@@ -573,8 +613,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S14 ESTHETISME -->
-<div class="sl psl" id="s14">
+<!-- S15 ESTHETISME -->
+<div class="sl psl" id="s15">
   <div class="pinfo">
     <div class="tag" data-i="1">Esthétisme &amp; choix artistiques</div>
     <h2 data-i="2">Une interface qui<br>s'<span class="acc">efface</span> devant<br>la nature</h2>
@@ -584,8 +624,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S15 CONCLUSION -->
-<div class="sl" id="s15">
+<!-- S16 CONCLUSION -->
+<div class="sl" id="s16">
   <div class="glow1"></div><div class="glow2"></div>
   <div class="conc">
     <img src="https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/logo.svg" data-i="1" onerror="this.style.display='none'">
@@ -612,7 +652,7 @@ const SL = Array.from(document.querySelectorAll('.sl'));
 const N  = SL.length;
 let cur = 0, busy = false;
 
-const PHONE_RANGE = [10,11,12,13];
+const PHONE_RANGE = [11,12,13,14];
 
 const TF = [
   ['in-fade','out-fade'],
@@ -625,6 +665,7 @@ const TF = [
   ['in-Z','out-Z'],
   ['in-W','out-W'],
   ['in-C','out-C'],
+  ['in-L','out-L'],
   ['in-U','out-U'],
   ['in-L','out-L'],
   ['in-L','out-L'],
