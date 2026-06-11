@@ -133,27 +133,29 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .impact-lo{background:rgba(72,173,204,.1);color:var(--s);border:1px solid rgba(72,173,204,.25)}
 
 /* S7 ENTONNOIR */
-#s7{background:#111c24;flex-direction:row;gap:48px;overflow:hidden}
-.funnel-left{flex:1;display:flex;flex-direction:column;gap:0;max-width:520px}
-.fs{display:flex;flex-direction:column;align-items:flex-start;margin-bottom:0}
-.fs-band{display:flex;align-items:center;gap:14px;padding:14px 20px;border-radius:12px;width:100%}
+#s7{background:#111c24;overflow:hidden}
+.s7-body{display:flex;gap:28px;width:100%;max-width:1300px;flex:1;min-height:0;align-items:stretch}
+.funnel-left{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.fs{display:flex;flex-direction:column;align-items:flex-start}
+.fs-band{display:flex;align-items:center;gap:14px;padding:12px 18px;border-radius:12px;width:100%}
 .fs1{background:rgba(72,173,204,.18);border:1px solid rgba(72,173,204,.35)}
 .fs2{background:rgba(72,173,204,.12);border:1px solid rgba(72,173,204,.22);width:88%;align-self:center}
 .fs3{background:rgba(3,101,140,.25);border:1px solid rgba(3,101,140,.45);width:72%;align-self:center}
 .fs4{background:rgba(3,101,140,.45);border:1px solid rgba(72,173,204,.5);width:52%;align-self:center}
 .fs-t{font-weight:700;font-size:13px;color:#fff}
 .fs-d{font-size:11px;color:rgba(255,255,255,.68);margin-top:1px}
-.fs-arrow{text-align:center;font-size:16px;color:rgba(72,173,204,.4);padding:3px 0;width:100%}
-.strat-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px 18px;margin-bottom:12px}
+.fs-arrow{text-align:center;font-size:16px;color:rgba(72,173,204,.4);padding:4px 0;width:100%}
+.strat-col{flex:0 0 300px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.strat-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 16px}
 .strat-t{font-size:12px;font-weight:700;color:var(--s);margin-bottom:6px;letter-spacing:.04em}
 .strat-items{display:flex;flex-direction:column;gap:5px}
 .strat-item{font-size:11px;color:rgba(255,255,255,.72);padding-left:10px;position:relative;line-height:1.4}
 .strat-item::before{content:'→';position:absolute;left:0;color:var(--s)}
 
 /* S7 CAROUSEL */
-.carousel{position:relative;border-radius:14px;overflow:hidden;flex-shrink:0;width:220px;background:#0a0a0a;align-self:center}
-.cr-track{display:flex;transition:transform .55s var(--e)}
-.cr-track img{width:220px;height:340px;object-fit:cover;flex-shrink:0;display:block}
+.carousel{position:relative;border-radius:14px;overflow:hidden;flex-shrink:0;width:220px;background:#0a0a0a}
+.cr-track{display:flex;height:100%;transition:transform .55s var(--e)}
+.cr-track img{width:220px;height:100%;min-height:220px;object-fit:cover;flex-shrink:0;display:block}
 .cr-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:2}
 .cr-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
 .cr-dot.active{background:#fff;transform:scale(1.3)}
@@ -410,8 +412,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 <!-- S7 ENTONNOIR -->
 <div class="sl" id="s7">
   <div class="tag" data-i="1" style="align-self:flex-start">Stratégie de communication</div>
-  <h2 data-i="2" style="align-self:flex-start;margin-bottom:28px">Entonnoir <span class="acc">par profil</span></h2>
-  <div style="display:flex;gap:32px;width:100%;max-width:1400px;align-items:flex-start">
+  <h2 data-i="2" style="align-self:flex-start;margin-bottom:16px">Entonnoir <span class="acc">par profil</span></h2>
+  <div class="s7-body">
     <div class="carousel" data-i="3" id="s7-carousel">
       <div class="cr-track" id="cr7">
         <img src="reseau1.jpg" alt="">
@@ -441,7 +443,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
         <div class="fs-band fs4"><div><div class="fs-t">Web App — Le Sentier de Sillans</div><div class="fs-d">Médiation complète · offline · 10 POI</div></div></div>
       </div>
     </div>
-    <div data-i="5" style="flex:1;display:flex;flex-direction:column;gap:10px;max-width:360px">
+    <div class="strat-col" data-i="5">
       <div class="strat-card">
         <div class="strat-t">L'Instagramer</div>
         <div class="strat-items">
