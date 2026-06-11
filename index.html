@@ -47,6 +47,15 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0d1a22;font-family:
 h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;line-height:1.05}
 .acc{color:var(--s)}
 
+/* DECORATIVE ANIM */
+.tag{position:relative;padding-left:14px}
+.tag::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--s);border-radius:1px;transform:scaleY(0);transform-origin:bottom;transition:transform .28s .05s var(--e)}
+.sl.on .tag::before{transform:scaleY(1)}
+h2 .acc{position:relative}
+h2 .acc::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2px;background:currentColor;opacity:.75;transform:scaleX(0);transform-origin:left;transition:transform .5s .5s var(--e);border-radius:2px;pointer-events:none}
+.sl.on h2 .acc::after{transform:scaleX(1)}
+#bg-orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(90px);width:60vw;height:60vw;left:55%;top:-20%;background:radial-gradient(circle,rgba(72,173,204,.07),transparent 70%);transition:width 1.4s var(--e),height 1.4s var(--e),left 1.4s var(--e),top 1.4s var(--e),background 1.4s var(--e)}
+
 /* S1 COVER */
 #s1{background:var(--p);overflow:hidden}
 .glow1{position:absolute;right:-8%;top:-15%;width:55vw;height:55vw;border-radius:50%;background:radial-gradient(circle,rgba(72,173,204,.2),transparent 70%);pointer-events:none}
@@ -146,7 +155,9 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 /* S7 ENTONNOIR */
 #s7{background:#111c24;overflow:hidden}
 .s7-body{display:flex;gap:28px;width:100%;max-width:1300px;flex:1;min-height:0;align-items:stretch}
-.funnel-left{flex:1;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.s7-left{flex:0 0 42%;overflow:hidden;border-radius:16px;background:#0a0a0a;position:relative}
+.s7-right{flex:1;min-width:0;display:flex;flex-direction:column;gap:14px;min-height:0}
+.funnel-left{display:flex;flex-direction:column;justify-content:space-between;flex:1;min-height:0}
 .fs{display:flex;flex-direction:column;align-items:flex-start}
 .fs-band{display:flex;align-items:center;gap:14px;padding:12px 18px;border-radius:12px;width:100%}
 .fs1{background:rgba(72,173,204,.18);border:1px solid rgba(72,173,204,.35)}
@@ -156,19 +167,19 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .fs-t{font-weight:700;font-size:13px;color:#fff}
 .fs-d{font-size:11px;color:rgba(255,255,255,.68);margin-top:1px}
 .fs-arrow{text-align:center;font-size:16px;color:rgba(72,173,204,.4);padding:4px 0;width:100%}
-.strat-col{flex:0 0 300px;display:flex;flex-direction:column;gap:10px;justify-content:center}
-.strat-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 16px}
-.strat-t{font-size:12px;font-weight:700;color:var(--s);margin-bottom:6px;letter-spacing:.04em}
-.strat-items{display:flex;flex-direction:column;gap:5px}
-.strat-item{font-size:11px;color:rgba(255,255,255,.72);padding-left:10px;position:relative;line-height:1.4}
+.strat-row{display:flex;gap:10px;flex-shrink:0}
+.strat-row .strat-card{flex:1}
+.strat-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px 14px}
+.strat-t{font-size:11px;font-weight:700;color:var(--s);margin-bottom:5px;letter-spacing:.04em}
+.strat-items{display:flex;flex-direction:column;gap:4px}
+.strat-item{font-size:10px;color:rgba(255,255,255,.72);padding-left:10px;position:relative;line-height:1.4}
 .strat-item::before{content:'→';position:absolute;left:0;color:var(--s)}
 
 /* S7 CAROUSEL */
-.carousel{position:relative;border-radius:14px;overflow:hidden;flex-shrink:0;width:220px;height:220px;background:#0a0a0a;align-self:center}
-.cr-track{display:flex;height:100%;transition:transform .55s var(--e)}
-.cr-track img{width:220px;height:220px;object-fit:cover;flex-shrink:0;display:block}
-.cr-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:2}
-.cr-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
+.cr-track{display:flex;height:100%;width:300%;transition:transform .55s var(--e);will-change:transform}
+.cr-track img{flex:1;height:100%;object-fit:cover;min-width:0;display:block}
+.cr-dots{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:2}
+.cr-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
 .cr-dot.active{background:#fff;transform:scale(1.3)}
 
 /* S8 PANNEAUX */
@@ -279,6 +290,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
+<div id="bg-orb"></div>
 <div id="stage">
 
 <!-- S1 COVER -->
@@ -472,7 +484,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   <div class="tag" data-i="1" style="align-self:flex-start">Stratégie de communication</div>
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:16px">Entonnoir <span class="acc">par profil</span></h2>
   <div class="s7-body">
-    <div class="carousel" data-i="3" id="s7-carousel">
+    <div class="s7-left" data-i="3" id="s7-carousel">
       <div class="cr-track" id="cr7">
         <img src="reseau1.jpg" alt="">
         <img src="reseau2.jpg" alt="">
@@ -484,43 +496,45 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
         <span class="cr-dot" data-cr="2"></span>
       </div>
     </div>
-    <div class="funnel-left" data-i="4">
-      <div class="fs">
-        <div class="fs-band fs1"><div><div class="fs-t">Réseaux Sociaux</div><div class="fs-d">Désaturation cascade · branding « randonnée »</div></div></div>
-        <div class="fs-arrow">↓</div>
-      </div>
-      <div class="fs">
-        <div class="fs-band fs2"><div><div class="fs-t">Flyers — Offices de tourisme</div><div class="fs-d">QR code · « La cascade se mérite »</div></div></div>
-        <div class="fs-arrow">↓</div>
-      </div>
-      <div class="fs">
-        <div class="fs-band fs3"><div><div class="fs-t">Panneaux sur le site</div><div class="fs-d">QR codes entrée sentier · étapes</div></div></div>
-        <div class="fs-arrow">↓</div>
-      </div>
-      <div class="fs">
-        <div class="fs-band fs4"><div><div class="fs-t">Web App — Le Sentier de Sillans</div><div class="fs-d">Médiation complète · offline · 10 POI</div></div></div>
-      </div>
-    </div>
-    <div class="strat-col" data-i="5">
-      <div class="strat-card">
-        <div class="strat-t">L'Instagramer</div>
-        <div class="strat-items">
-          <div class="strat-item">Désaturer la cascade sur les RS</div>
-          <div class="strat-item">Valoriser la « randonnée sportive », pas le spot</div>
-          <div class="strat-item">SEO « Sentier de Sillans » &gt; « Baignade Sillans »</div>
+    <div class="s7-right" data-i="4">
+      <div class="funnel-left">
+        <div class="fs">
+          <div class="fs-band fs1"><div><div class="fs-t">Réseaux Sociaux</div><div class="fs-d">Désaturation cascade · branding « randonnée »</div></div></div>
+          <div class="fs-arrow">↓</div>
+        </div>
+        <div class="fs">
+          <div class="fs-band fs2"><div><div class="fs-t">Flyers — Offices de tourisme</div><div class="fs-d">QR code · « La cascade se mérite »</div></div></div>
+          <div class="fs-arrow">↓</div>
+        </div>
+        <div class="fs">
+          <div class="fs-band fs3"><div><div class="fs-t">Panneaux sur le site</div><div class="fs-d">QR codes entrée sentier · étapes</div></div></div>
+          <div class="fs-arrow">↓</div>
+        </div>
+        <div class="fs">
+          <div class="fs-band fs4"><div><div class="fs-t">Web App — Le Sentier de Sillans</div><div class="fs-d">Médiation complète · offline · 10 POI</div></div></div>
         </div>
       </div>
-      <div class="strat-card">
-        <div class="strat-t">Le Visiteur GPS</div>
-        <div class="strat-items">
-          <div class="strat-item">Mise à jour Google Maps · mention interdiction</div>
-          <div class="strat-item">Page d'alerte sur requêtes « baignade »</div>
+      <div class="strat-row">
+        <div class="strat-card">
+          <div class="strat-t">L'Instagramer</div>
+          <div class="strat-items">
+            <div class="strat-item">Désaturer la cascade sur les RS</div>
+            <div class="strat-item">Valoriser la « randonnée sportive »</div>
+            <div class="strat-item">SEO « Sentier » &gt; « Baignade »</div>
+          </div>
         </div>
-      </div>
-      <div class="strat-card">
-        <div class="strat-t">L'Explorateur</div>
-        <div class="strat-items">
-          <div class="strat-item">Flyer topoguide · biodiversité · technicité</div>
+        <div class="strat-card">
+          <div class="strat-t">Le Visiteur GPS</div>
+          <div class="strat-items">
+            <div class="strat-item">Google Maps · mention interdiction</div>
+            <div class="strat-item">Alerte sur requêtes « baignade »</div>
+          </div>
+        </div>
+        <div class="strat-card">
+          <div class="strat-t">L'Explorateur</div>
+          <div class="strat-items">
+            <div class="strat-item">Flyer topoguide · biodiversité · technicité</div>
+          </div>
         </div>
       </div>
     </div>
@@ -726,6 +740,33 @@ let cur = 0, busy = false;
 
 const PHONE_RANGE = [12,13,14,15];
 
+const ORB = [
+  {w:'65vw',l:'55%',t:'-15%',bg:'rgba(72,173,204,.07)'},
+  {w:'50vw',l:'-8%', t:'30%',bg:'rgba(72,173,204,.06)'},
+  {w:'45vw',l:'25%', t:'55%',bg:'rgba(232,79,79,.05)'},
+  {w:'55vw',l:'65%', t:'8%', bg:'rgba(72,173,204,.06)'},
+  {w:'50vw',l:'5%',  t:'55%',bg:'rgba(72,173,204,.07)'},
+  {w:'55vw',l:'72%', t:'-5%',bg:'rgba(72,173,204,.05)'},
+  {w:'50vw',l:'45%', t:'42%',bg:'rgba(3,101,140,.09)'},
+  {w:'40vw',l:'58%', t:'55%',bg:'rgba(72,173,204,.06)'},
+  {w:'55vw',l:'72%', t:'18%',bg:'rgba(3,101,140,.09)'},
+  {w:'50vw',l:'38%', t:'-12%',bg:'rgba(72,173,204,.07)'},
+  {w:'45vw',l:'-5%', t:'52%',bg:'rgba(72,173,204,.06)'},
+  {w:'50vw',l:'52%', t:'62%',bg:'rgba(72,173,204,.06)'},
+  {w:'55vw',l:'78%', t:'18%',bg:'rgba(3,101,140,.11)'},
+  {w:'50vw',l:'78%', t:'42%',bg:'rgba(3,101,140,.09)'},
+  {w:'45vw',l:'72%', t:'52%',bg:'rgba(3,101,140,.09)'},
+  {w:'50vw',l:'78%', t:'28%',bg:'rgba(3,101,140,.09)'},
+  {w:'75vw',l:'32%', t:'-12%',bg:'rgba(3,101,140,.11)'},
+];
+const orb = document.getElementById('bg-orb');
+function updateOrb(idx){
+  const o = ORB[idx] || ORB[0];
+  orb.style.width = o.w; orb.style.height = o.w;
+  orb.style.left = o.l; orb.style.top = o.t;
+  orb.style.background = `radial-gradient(circle,${o.bg},transparent 70%)`;
+}
+
 const TF = [
   ['in-fade','out-fade'],
   ['in-L','out-L'],
@@ -760,6 +801,7 @@ function goTo(next, dir) {
   SL[prev].classList.add('out', outC);
   SL[next].classList.add('on', inC);
   setPhone(next);
+  updateOrb(next);
   setTimeout(() => {
     SL[prev].classList.remove('out', outC);
     SL[next].classList.remove(inC);
@@ -792,6 +834,7 @@ document.addEventListener('mousedown',()=>c.classList.add('big'));
 document.addEventListener('mouseup',()=>c.classList.remove('big'));
 
 updateUI();
+updateOrb(0);
 
 (function(){
   const track = document.getElementById('cr7');
@@ -799,7 +842,7 @@ updateUI();
   let ci = 0;
   function crGo(i){
     ci = (i + 3) % 3;
-    track.style.transform = `translateX(${-ci * 220}px)`;
+    track.style.transform = `translateX(${-ci * 100/3}%)`;
     dots.forEach((d,j) => d.classList.toggle('active', j === ci));
   }
   dots.forEach(d => d.addEventListener('click', e => { e.stopPropagation(); crGo(+d.dataset.cr); }));
