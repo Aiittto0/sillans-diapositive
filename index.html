@@ -115,6 +115,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 #s6{background:var(--dk)}
 .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:100%;max-width:1100px}
 .persona{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;gap:10px}
+.p-photo{margin:-22px -18px 14px;height:145px;overflow:hidden;border-radius:12px 12px 0 0;flex-shrink:0}
+.p-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .p-top{display:flex;align-items:center;gap:12px}
 .p-av{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;letter-spacing:.04em;flex-shrink:0}
 .av1{background:rgba(232,79,79,.2);border:2px solid rgba(232,79,79,.4);color:#E84F4F}
@@ -342,6 +344,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:24px">Qui vient à <span class="acc">Sillans</span>, pourquoi, et quel impact ?</h2>
   <div class="persona-grid">
     <div class="persona" data-i="3">
+      <div class="p-photo"><img src="selfie.jpg" alt="Instagramer"></div>
       <div class="p-top">
         <div class="p-av av1">SI</div>
         <div><div class="p-name">L'Instagramer</div><div class="p-sub">Social Impulsif · TikTok / Instagram</div></div>
@@ -355,6 +358,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
       <div class="p-impact impact-hi">Impact élevé · piétinement · zones interdites</div>
     </div>
     <div class="persona" data-i="4">
+      <div class="p-photo"><img src="famille%20en%20foret.jpeg" alt="Visiteur GPS"></div>
       <div class="p-top">
         <div class="p-av av2">NP</div>
         <div><div class="p-name">Le Visiteur GPS</div><div class="p-sub">Numérique Passif · Google Maps / Blogs</div></div>
@@ -368,6 +372,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
       <div class="p-impact impact-md">Impact moyen · baignade si non signalé</div>
     </div>
     <div class="persona" data-i="5">
+      <div class="p-photo"><img src="Randonneur.jpg" alt="Explorateur"></div>
       <div class="p-top">
         <div class="p-av av3">HP</div>
         <div><div class="p-name">L'Explorateur</div><div class="p-sub">Héritage Papier · Flyers / Hébergeurs</div></div>
