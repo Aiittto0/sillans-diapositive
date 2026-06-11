@@ -238,14 +238,16 @@ h2 .acc::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2p
 
 /* S12 FIGMA */
 #s12{background:#111c24}
-.figma-layout{display:flex;gap:44px;width:100%;max-width:1200px;align-items:center}
-.figma-text{display:flex;flex-direction:column;gap:12px;flex:1}
+.figma-layout{display:flex;gap:44px;width:100%;max-width:1200px;align-items:stretch}
+.figma-text{display:flex;flex-direction:column;gap:12px;flex:1;justify-content:center}
 .fig-item{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:15px 18px}
 .fig-n{font-family:'Marky',sans-serif;font-size:30px;color:var(--s);opacity:.3;line-height:1;flex-shrink:0;width:32px}
 .fig-item strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:3px}
 .fig-item span{font-size:12px;color:rgba(255,255,255,.68);line-height:1.4}
-.figma-img{flex:1.6;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.1);flex-shrink:0;align-self:stretch;display:flex}
-.figma-img img{width:100%;object-fit:cover;display:block}
+.figma-img{flex:1.4;border-radius:14px;border:1px solid rgba(255,255,255,.1);flex-shrink:0;align-self:stretch;display:flex;flex-direction:column;gap:10px;padding:10px;background:rgba(255,255,255,.02);min-height:0}
+.figma-img img{width:100%;display:block;border-radius:8px;object-fit:cover}
+.figma-img img:first-child{flex:0 0 auto;height:auto;object-fit:contain}
+.figma-img img:last-child{flex:1;min-height:0}
 
 /* APP PHONE */
 #app-phone{position:fixed;right:72px;top:50%;transform:translateY(-50%);z-index:50;opacity:0;pointer-events:none;transition:opacity .5s var(--e)}
@@ -659,6 +661,7 @@ h2 .acc::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:2p
     </div>
     <div class="figma-img" data-i="4">
       <img src="figma.png" alt="Figma — Le Sentier de Sillans">
+      <img src="Figma2.png" alt="Figma — Composants">
     </div>
   </div>
 </div>
