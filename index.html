@@ -57,7 +57,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .cover-sub{font-size:14px;color:rgba(255,255,255,.65);letter-spacing:.14em;text-transform:uppercase;margin-bottom:36px;font-weight:300}
 .team{display:flex;flex-wrap:wrap;gap:9px}
 .team span{border:1px solid rgba(255,255,255,.35);border-radius:100px;padding:5px 16px;font-size:12px;color:rgba(255,255,255,.88);letter-spacing:.04em}
-.vl{position:absolute;right:72px;top:50%;transform:translateY(-50%);width:110px;opacity:.85}
+.vl{position:absolute;right:72px;top:50%;transform:translateY(-50%);width:180px;opacity:.9}
 .trail{position:absolute;bottom:32px;left:72px;display:flex;gap:9px;align-items:center}
 .td{width:6px;height:6px;border-radius:50%;background:var(--s);animation:tp 2s calc(var(--d,0) * .2s) ease-in-out infinite}
 @keyframes tp{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:1;transform:scale(1.6)}}
@@ -171,8 +171,13 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .cr-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s}
 .cr-dot.active{background:#fff;transform:scale(1.3)}
 
-/* S8 LOGO */
-#s8{background:#0d1a22}
+/* S8 PANNEAUX */
+#s8{background:#111c24}
+.pann-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:16px;width:100%;max-width:980px;flex:1;min-height:0}
+.pann-img{width:100%;height:100%;object-fit:contain;border-radius:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);display:block}
+
+/* S9 LOGO */
+#s9{background:#0d1a22}
 .logo-row{display:flex;gap:16px;width:100%;max-width:1100px;margin-top:24px}
 .lv{flex:1;border-radius:18px;padding:30px 18px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;min-height:185px;justify-content:center}
 .ldk{background:#03658C}.llg{background:#F2F2F2}.lgr{background:linear-gradient(160deg,#48ADCC,#03658C)}
@@ -246,10 +251,10 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .uxd{width:6px;height:6px;border-radius:50%;background:var(--s);margin-top:6px;flex-shrink:0}
 .uxt strong{display:block;font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
 .uxt span{font-size:12px;color:rgba(255,255,255,.72);line-height:1.4}
-#s12,#s13,#s14,#s15{background:#0d1a22}
+#s13,#s14,#s15,#s16{background:#0d1a22}
 
-/* S16 CONCLUSION */
-#s16{background:var(--p);overflow:hidden}
+/* S17 CONCLUSION */
+#s17{background:var(--p);overflow:hidden}
 .conc{position:relative;z-index:1;text-align:center;max-width:740px}
 .conc img{width:64px;margin-bottom:22px;filter:brightness(0) invert(1) opacity(.45)}
 .conc h1{font-family:'Marky',sans-serif;font-size:clamp(38px,5vw,74px);color:#fff;margin-bottom:16px;line-height:1}
@@ -522,8 +527,20 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S8 LOGO -->
+<!-- S8 PANNEAUX -->
 <div class="sl" id="s8">
+  <div class="tag" data-i="1" style="align-self:flex-start">Communication · Panneaux</div>
+  <h2 data-i="2" style="align-self:flex-start;margin-bottom:20px">Signalétique <span class="acc">sur site</span></h2>
+  <div class="pann-grid" data-i="3">
+    <img class="pann-img" src="panneau1.png" alt="Panneau 1">
+    <img class="pann-img" src="panneau2.png" alt="Panneau 2">
+    <img class="pann-img" src="panneau3.png" alt="Panneau 3">
+    <img class="pann-img" src="panneau4.png" alt="Panneau 4">
+  </div>
+</div>
+
+<!-- S9 LOGO -->
+<div class="sl" id="s9">
   <div class="tag" data-i="1" style="align-self:flex-start">Charte graphique · Logotype</div>
   <h2 data-i="2" style="align-self:flex-start">Le tracé du <span class="acc">sentier</span></h2>
   <div class="logo-row" data-i="3">
@@ -546,8 +563,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   <div class="logo-note" data-i="4">Les <strong>pointillés</strong> symbolisent le cheminement — la cascade n'est qu'une étape d'un récit plus vaste</div>
 </div>
 
-<!-- S9 COULEURS -->
-<div class="sl" id="s9" style="padding:0">
+<!-- S10 COULEURS -->
+<div class="sl" id="s10" style="padding:0">
   <div class="cs cs1" data-i="1">
     <div class="cs-bar"></div>
     <div class="cs-hex">#03658C</div><div class="cs-name">Bleu Profond</div>
@@ -575,8 +592,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S10 TYPOGRAPHIES -->
-<div class="sl" id="s10" style="padding:0">
+<!-- S11 TYPOGRAPHIES -->
+<div class="sl" id="s11" style="padding:0">
   <div class="ty" data-i="1">
     <div class="ty-bg m">Aa</div>
     <div class="ty-role">Titres &amp; Logo</div>
@@ -603,8 +620,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S11 FIGMA -->
-<div class="sl" id="s11">
+<!-- S12 FIGMA -->
+<div class="sl" id="s12">
   <div class="tag" data-i="1" style="align-self:flex-start">Conception — Figma</div>
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:28px">Du wireframe<br>au <span class="acc">composant</span></h2>
   <div class="figma-layout">
@@ -632,8 +649,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S12 PARCOURS UTILISATEUR -->
-<div class="sl psl" id="s12">
+<!-- S13 PARCOURS UTILISATEUR -->
+<div class="sl psl" id="s13">
   <div class="pinfo">
     <div class="tag" data-i="1">Parcours utilisateur</div>
     <h2 data-i="2">Du parking<br><span class="acc">à la cascade</span></h2>
@@ -644,8 +661,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S13 UX / UI -->
-<div class="sl psl" id="s13">
+<!-- S14 UX / UI -->
+<div class="sl psl" id="s14">
   <div class="pinfo">
     <div class="tag" data-i="1">UX &amp; UI — Justifications terrain</div>
     <h2 data-i="2">Pensé pour<br><span class="acc">la marche</span></h2>
@@ -656,8 +673,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S14 FONCTIONNALITES -->
-<div class="sl psl" id="s14">
+<!-- S15 FONCTIONNALITES -->
+<div class="sl psl" id="s15">
   <div class="pinfo">
     <div class="tag" data-i="1">Fonctionnalités uniques</div>
     <h2 data-i="2">Ce qui rend l'app<br><span class="acc">indispensable</span></h2>
@@ -668,8 +685,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S15 ESTHETISME -->
-<div class="sl psl" id="s15">
+<!-- S16 ESTHETISME -->
+<div class="sl psl" id="s16">
   <div class="pinfo">
     <div class="tag" data-i="1">Esthétisme &amp; choix artistiques</div>
     <h2 data-i="2">Une interface qui<br>s'<span class="acc">efface</span> devant<br>la nature</h2>
@@ -679,8 +696,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- S16 CONCLUSION -->
-<div class="sl" id="s16">
+<!-- S17 CONCLUSION -->
+<div class="sl" id="s17">
   <div class="glow1"></div><div class="glow2"></div>
   <div class="conc">
     <img src="https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/logo.svg" data-i="1" onerror="this.style.display='none'">
@@ -707,7 +724,7 @@ const SL = Array.from(document.querySelectorAll('.sl'));
 const N  = SL.length;
 let cur = 0, busy = false;
 
-const PHONE_RANGE = [11,12,13,14];
+const PHONE_RANGE = [12,13,14,15];
 
 const TF = [
   ['in-fade','out-fade'],
@@ -717,6 +734,7 @@ const TF = [
   ['in-C','out-C'],
   ['in-U','out-U'],
   ['in-L','out-L'],
+  ['in-W','out-W'],
   ['in-Z','out-Z'],
   ['in-W','out-W'],
   ['in-C','out-C'],
@@ -754,7 +772,9 @@ function updateUI() {
   document.getElementById('prog').style.width = (cur/(N-1)*100) + '%';
 }
 
-document.getElementById('stage').addEventListener('click', () => goTo(cur+1, 1));
+document.getElementById('stage').addEventListener('click', e => {
+  e.clientX < window.innerWidth / 2 ? goTo(cur-1, -1) : goTo(cur+1, 1);
+});
 phone.addEventListener('click', e => e.stopPropagation());
 document.querySelectorAll('a').forEach(a => a.addEventListener('click', e => e.stopPropagation()));
 
