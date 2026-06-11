@@ -90,8 +90,10 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .pb-red .pb-stat-n{color:#E84F4F}.pb-grn .pb-stat-n{color:var(--s)}
 .pb-stat-l{font-size:11px;color:rgba(255,255,255,.5);line-height:1.5}
 .pb-list{display:flex;flex-direction:column;gap:8px}
-.pb-li{font-size:12px;color:rgba(255,255,255,.78);padding:9px 13px 9px 16px;border-radius:8px;background:rgba(255,255,255,.04);border-left:2px solid;line-height:1.4}
-.pb-red .pb-li{border-color:rgba(232,79,79,.55)}.pb-grn .pb-li{border-color:rgba(72,173,204,.55)}
+.pb-li{display:flex;align-items:center;gap:13px;background:rgba(255,255,255,.04);border-radius:9px;padding:10px 14px}
+.pb-icon{width:22px;height:22px;flex-shrink:0;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.pb-red .pb-icon{stroke:#E84F4F}.pb-grn .pb-icon{stroke:var(--s)}
+.pb-kw{font-size:12px;font-weight:600;color:#fff}
 .pb-sep{width:1px;flex-shrink:0;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.1) 20%,rgba(255,255,255,.1) 80%,transparent);display:flex;align-items:center;justify-content:center;z-index:2}
 .pb-vs{width:44px;height:44px;border-radius:50%;background:#0d1a22;border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-family:'Marky',sans-serif;font-size:13px;color:rgba(255,255,255,.35);flex-shrink:0}
 
@@ -317,11 +319,26 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
       <span class="pb-stat-l">fréquentation<br>en hausse constante</span>
     </div>
     <div class="pb-list">
-      <div class="pb-li">Saturation des zones critiques</div>
-      <div class="pb-li">Travertins millénaires dégradés</div>
-      <div class="pb-li">Passage rapide · aucune immersion</div>
-      <div class="pb-li">Interdictions ignorées</div>
-      <div class="pb-li">Signalétique perçue comme punitive</div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><circle cx="6.5" cy="5" r="2.5"/><path d="M1 17c0-3.5 2.5-5.5 5.5-5.5S12 13.5 12 17"/><circle cx="14.5" cy="5.5" r="2"/><path d="M12 17c0-2.2 1.2-3.5 3.5-3.5"/></svg>
+        <span class="pb-kw">Zones critiques saturées</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M10 2L18 8L14 17H6L2 8z"/><path d="M9 2.5L7.5 10.5L11.5 13L10 17"/></svg>
+        <span class="pb-kw">Travertins dégradés</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M2 7h5M2 10h9M2 13h5"/><path d="M13 6l5 4-5 4"/></svg>
+        <span class="pb-kw">Passage rapide</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M5 5l10 10"/></svg>
+        <span class="pb-kw">Interdictions ignorées</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M10 3L18 17H2z"/><path d="M10 9v3"/><path d="M10 14.5v.5"/></svg>
+        <span class="pb-kw">Signalétique punitive</span>
+      </div>
     </div>
   </div>
   <div class="pb-sep"><div class="pb-vs">vs</div></div>
@@ -334,11 +351,26 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
       <span class="pb-stat-l">ans de<br>formation</span>
     </div>
     <div class="pb-list">
-      <div class="pb-li">Travertins calcaires · irréversibles</div>
-      <div class="pb-li">Écrevisse à pieds blancs · protégée</div>
-      <div class="pb-li">Baignade · feu · strictement interdits</div>
-      <div class="pb-li">ENS menacé · érosion anthropique</div>
-      <div class="pb-li">Arrêté préfectoral en vigueur</div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M5 3h10M5 17h10"/><path d="M6 3L10 10L6 17M14 3L10 10L14 17"/></svg>
+        <span class="pb-kw">10 000 ans de formation</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M10 2C10 2 3 7 3 13c0 3.5 3.5 5 7 5s7-1.5 7-5c0-6-7-11-7-11z"/><path d="M10 2v16"/></svg>
+        <span class="pb-kw">Espèce protégée</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M2 13C4 10 6 10 8 13S12 16 14 13 18 10 18 10"/><path d="M6 4L12 8M12 4L6 8"/></svg>
+        <span class="pb-kw">Baignade · feu interdits</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M2 16L7 7L11 11L14 5L18 16z"/><path d="M8 16v-3l2-1.5 1 2.5"/></svg>
+        <span class="pb-kw">ENS menacé · érosion</span>
+      </div>
+      <div class="pb-li">
+        <svg class="pb-icon" viewBox="0 0 20 20"><path d="M5 2h8l3 3v13H5z"/><path d="M13 2v4h3"/><path d="M7 9h6M7 12h6M7 15h4"/></svg>
+        <span class="pb-kw">Arrêté préfectoral</span>
+      </div>
     </div>
   </div>
 </div>
