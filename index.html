@@ -47,7 +47,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0d1a22;font-family:
 h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;line-height:1.05}
 .acc{color:var(--s)}
 
-/* ══ S1 COVER ══ */
+/* S1 COVER */
 #s1{background:var(--p);overflow:hidden}
 .glow1{position:absolute;right:-8%;top:-15%;width:55vw;height:55vw;border-radius:50%;background:radial-gradient(circle,rgba(72,173,204,.2),transparent 70%);pointer-events:none}
 .glow2{position:absolute;left:-5%;bottom:-10%;width:35vw;height:35vw;border-radius:50%;background:radial-gradient(circle,rgba(72,173,204,.1),transparent 70%);pointer-events:none}
@@ -62,7 +62,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .td{width:6px;height:6px;border-radius:50%;background:var(--s);animation:tp 2s calc(var(--d,0) * .2s) ease-in-out infinite}
 @keyframes tp{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:1;transform:scale(1.6)}}
 
-/* ══ S2 CONSTAT ══ */
+/* S2 CONSTAT */
 #s2{background:#0d1a22;overflow:hidden}
 #s2::before{content:'';position:absolute;inset:0;background:url('https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/cascade.webp') center/cover no-repeat;opacity:.1}
 .constat-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:2px;width:100%;max-width:1100px}
@@ -75,35 +75,32 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .cn em{color:var(--s);font-style:normal}
 .cl{font-size:13px;color:rgba(255,255,255,.5);font-weight:400;line-height:1.4}
 
-/* ══ S3 PROBLÉMATIQUES ══ */
+/* S3 PROBLEMATIQUES */
 #s3{background:#0d1a22;padding:0;flex-direction:row;overflow:hidden}
 .pb-side{flex:1;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:56px 40px;position:relative}
 .pb-red{background:rgba(232,79,79,.07);border-right:1px solid rgba(232,79,79,.15)}
 .pb-grn{background:rgba(72,173,204,.07);border-left:1px solid rgba(72,173,204,.15)}
-.pb-ico{font-size:60px}
 .pb-t{font-family:'Marky',sans-serif;font-size:clamp(20px,2.3vw,32px);text-align:center}
 .pb-red .pb-t{color:#E84F4F}.pb-grn .pb-t{color:var(--s)}
 .pb-list{display:flex;flex-direction:column;gap:8px;width:100%;max-width:290px}
 .pb-li{background:rgba(255,255,255,.05);border-radius:8px;padding:7px 13px;font-size:12px;color:rgba(255,255,255,.55);text-align:center}
 .pb-vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#0d1a22;border:2px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-family:'Marky',sans-serif;font-size:15px;color:rgba(255,255,255,.3);z-index:10}
 
-/* ══ S4 DEMANDE ══ */
+/* S4 DEMANDE */
 #s4{background:var(--dk)}
 .dem-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;max-width:1100px}
 .dm{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:24px 20px;display:flex;gap:16px;align-items:center}
 .dn{font-family:'Marky',sans-serif;font-size:44px;color:var(--s);opacity:.28;line-height:1;flex-shrink:0;width:44px}
-.di{font-size:28px;flex-shrink:0}
 .dt strong{display:block;font-size:14px;font-weight:700;color:#fff;margin-bottom:3px}
 .dt span{font-size:12px;color:rgba(255,255,255,.4)}
 
-/* ══ S5 CONCEPT ══ */
+/* S5 CONCEPT */
 #s5{background:#111c24;overflow:hidden}
 .cw{display:flex;align-items:stretch;gap:2px;width:100%;max-width:1200px;height:350px}
 .cx{flex:1;border-radius:18px;padding:32px 28px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
 .cx.before{background:rgba(232,79,79,.07);border:1px solid rgba(232,79,79,.18)}
 .cx.after{background:rgba(72,173,204,.09);border:1px solid rgba(72,173,204,.28)}
 .cx img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.15}
-.cx-ico{position:absolute;top:28px;left:28px;font-size:56px;opacity:.5}
 .cx-l{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
 .cx.before .cx-l{color:#E84F4F}.cx.after .cx-l{color:var(--s)}
 .cx-t{font-family:'Marky',sans-serif;font-size:clamp(18px,2.2vw,30px);color:#fff;margin-bottom:5px}
@@ -114,15 +111,15 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .pill-n{font-family:'Marky',sans-serif;font-size:24px;color:var(--s);opacity:.4;line-height:1;flex-shrink:0}
 .pill-t{font-size:12px;font-weight:700;color:#fff}
 
-/* ══ S6 PERSONAS (audit) ══ */
+/* S6 AUDIT */
 #s6{background:var(--dk)}
 .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:100%;max-width:1100px}
 .persona{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;gap:10px}
 .p-top{display:flex;align-items:center;gap:12px}
-.p-av{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
-.av1{background:rgba(232,79,79,.2);border:2px solid rgba(232,79,79,.4)}
-.av2{background:rgba(72,173,204,.2);border:2px solid rgba(72,173,204,.4)}
-.av3{background:rgba(255,200,100,.15);border:2px solid rgba(255,200,100,.3)}
+.p-av{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;letter-spacing:.04em;flex-shrink:0}
+.av1{background:rgba(232,79,79,.2);border:2px solid rgba(232,79,79,.4);color:#E84F4F}
+.av2{background:rgba(72,173,204,.2);border:2px solid rgba(72,173,204,.4);color:var(--s)}
+.av3{background:rgba(255,200,100,.15);border:2px solid rgba(255,200,100,.3);color:#FFC864}
 .p-name{font-family:'Marky',sans-serif;font-size:16px;color:#fff}
 .p-sub{font-size:11px;color:rgba(255,255,255,.38);margin-top:1px}
 .p-quote{font-size:11px;color:var(--s);font-style:italic;line-height:1.5;border-left:2px solid var(--s);padding-left:9px}
@@ -133,17 +130,15 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .impact-md{background:rgba(255,180,0,.08);color:#FFB400;border:1px solid rgba(255,180,0,.2)}
 .impact-lo{background:rgba(72,173,204,.1);color:var(--s);border:1px solid rgba(72,173,204,.25)}
 
-/* ══ S7 ENTONNOIR ══ */
+/* S7 ENTONNOIR */
 #s7{background:#111c24;flex-direction:row;gap:48px;overflow:hidden}
 .funnel-left{flex:1;display:flex;flex-direction:column;gap:0;max-width:520px}
-.funnel-right{flex:1;max-width:440px}
 .fs{display:flex;flex-direction:column;align-items:flex-start;margin-bottom:0}
 .fs-band{display:flex;align-items:center;gap:14px;padding:14px 20px;border-radius:12px;width:100%}
 .fs1{background:rgba(72,173,204,.18);border:1px solid rgba(72,173,204,.35)}
 .fs2{background:rgba(72,173,204,.12);border:1px solid rgba(72,173,204,.22);width:88%;align-self:center}
 .fs3{background:rgba(3,101,140,.25);border:1px solid rgba(3,101,140,.45);width:72%;align-self:center}
 .fs4{background:rgba(3,101,140,.45);border:1px solid rgba(72,173,204,.5);width:52%;align-self:center}
-.fs-ico{font-size:22px;flex-shrink:0}
 .fs-t{font-weight:700;font-size:13px;color:#fff}
 .fs-d{font-size:11px;color:rgba(255,255,255,.4);margin-top:1px}
 .fs-arrow{text-align:center;font-size:16px;color:rgba(72,173,204,.4);padding:3px 0;width:100%}
@@ -153,7 +148,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .strat-item{font-size:11px;color:rgba(255,255,255,.5);padding-left:10px;position:relative;line-height:1.4}
 .strat-item::before{content:'→';position:absolute;left:0;color:var(--s)}
 
-/* ══ S8 LOGO ══ */
+/* S8 LOGO */
 #s8{background:#0d1a22}
 .logo-row{display:flex;gap:16px;width:100%;max-width:1100px;margin-top:24px}
 .lv{flex:1;border-radius:18px;padding:30px 18px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;min-height:185px;justify-content:center}
@@ -166,7 +161,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .logo-note{margin-top:16px;max-width:900px;background:rgba(72,173,204,.07);border:1px solid rgba(72,173,204,.2);border-radius:12px;padding:12px 20px;text-align:center;font-size:13px;color:rgba(255,255,255,.5)}
 .logo-note strong{color:var(--s)}
 
-/* ══ S9 COULEURS ══ */
+/* S9 COULEURS */
 #s9{background:#0d1a22;padding:0;flex-direction:row;overflow:hidden}
 .cs{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:26px 22px;position:relative;transition:flex .4s var(--e)}
 .cs:hover{flex:1.9}
@@ -180,7 +175,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .cs3 .cs-name{color:var(--dk)}.cs-role{font-size:11px;color:rgba(255,255,255,.45);line-height:1.4}
 .cs3 .cs-role{color:rgba(0,0,0,.35)}
 
-/* ══ S10 TYPOGRAPHIES ══ */
+/* S10 TYPOGRAPHIES */
 #s10{background:var(--dk);padding:0;flex-direction:row;overflow:hidden}
 .ty{flex:1;height:100%;padding:44px 36px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
 .ty:nth-child(1){background:rgba(3,101,140,.22)}
@@ -202,27 +197,14 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .ty-usage{font-size:11px;color:rgba(255,255,255,.4);line-height:1.5}
 .ty-abc{font-size:10px;color:rgba(255,255,255,.17);margin-top:9px;line-height:1.7;letter-spacing:.05em;word-break:break-all}
 
-/* ══ APP PHONE ══ */
-#app-phone{
-  position:fixed;right:72px;top:50%;transform:translateY(-50%);
-  z-index:50;opacity:0;pointer-events:none;
-  transition:opacity .5s var(--e);
-}
+/* APP PHONE */
+#app-phone{position:fixed;right:72px;top:50%;transform:translateY(-50%);z-index:50;opacity:0;pointer-events:none;transition:opacity .5s var(--e)}
 #app-phone.show{opacity:1;pointer-events:all}
-.pf{
-  width:280px;height:572px;
-  background:#0a0a0a;border-radius:44px;
-  border:8px solid #1e1e1e;
-  box-shadow:0 40px 100px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.05);
-  overflow:hidden;position:relative;
-}
-.pf::before{
-  content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
-  width:86px;height:24px;background:#0a0a0a;border-radius:0 0 14px 14px;z-index:10;
-}
+.pf{width:280px;height:572px;background:#0a0a0a;border-radius:44px;border:8px solid #1e1e1e;box-shadow:0 40px 100px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.05);overflow:hidden;position:relative}
+.pf::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:86px;height:24px;background:#0a0a0a;border-radius:0 0 14px 14px;z-index:10}
 .pf iframe{width:264px;height:556px;border:none;border-radius:36px;display:block}
 
-/* ══ PHONE SLIDES ══ */
+/* PHONE SLIDES */
 .psl{flex-direction:row;align-items:center;justify-content:flex-start}
 .psl .pinfo{max-width:480px;display:flex;flex-direction:column;gap:0}
 .psl h2{margin-bottom:18px}
@@ -232,20 +214,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 .uxt span{font-size:12px;color:rgba(255,255,255,.45);line-height:1.4}
 #s11,#s12,#s13,#s14{background:#0d1a22}
 
-/* ══ S15 REGARD CRITIQUE ══ */
-#s15{background:var(--dk)}
-.crit-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%;max-width:1100px;margin-top:24px}
-.cq{border-radius:16px;padding:22px 20px}
-.cq.ok{background:rgba(72,173,204,.08);border:1px solid rgba(72,173,204,.2)}
-.cq.nok{background:rgba(255,200,80,.05);border:1px solid rgba(255,200,80,.15)}
-.cq-head{display:flex;align-items:center;gap:9px;margin-bottom:12px}
-.cq-ico{font-size:20px}.cq-t{font-weight:700;font-size:14px;color:#fff}
-.cq-list{display:flex;flex-direction:column;gap:8px}
-.cq-row{font-size:12px;color:rgba(255,255,255,.58);line-height:1.4;padding-left:14px;position:relative}
-.cq-row::before{content:attr(data-b);position:absolute;left:0;color:var(--s)}
-
-/* ══ S16 CONCLUSION ══ */
-#s16{background:var(--p);overflow:hidden}
+/* S15 CONCLUSION */
+#s15{background:var(--p);overflow:hidden}
 .conc{position:relative;z-index:1;text-align:center;max-width:740px}
 .conc img{width:64px;margin-bottom:22px;filter:brightness(0) invert(1) opacity(.45)}
 .conc h1{font-family:'Marky',sans-serif;font-size:clamp(38px,5vw,74px);color:#fff;margin-bottom:16px;line-height:1}
@@ -262,9 +232,8 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 
 <div id="cur"></div>
 <div id="prog"></div>
-<div id="ctr">1 / 16</div>
+<div id="ctr">1 / 15</div>
 
-<!-- ══ PERSISTENT APP PHONE (S11–S14) ══ -->
 <div id="app-phone">
   <div class="pf">
     <iframe src="https://gabinstf.github.io/le-sentier-de-sillans/" allow="geolocation" title="Le Sentier de Sillans"></iframe>
@@ -273,7 +242,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
 
 <div id="stage">
 
-<!-- ══ S1 COVER ══ -->
+<!-- S1 COVER -->
 <div class="sl on" id="s1">
   <div class="glow1"></div><div class="glow2"></div>
   <div class="ci">
@@ -293,64 +262,61 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- ══ S2 CONSTAT ══ -->
+<!-- S2 CONSTAT -->
 <div class="sl" id="s2">
   <div class="tag" data-i="1" style="align-self:flex-start">Situation actuelle</div>
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:26px">Sillans-la-Cascade <span class="acc">en chiffres</span></h2>
   <div class="constat-grid" data-i="3">
-    <div class="cb"><div class="cn">369<em>ha</em></div><div class="cl">Espace Naturel Sensible géré par le Conseil Départemental du Var</div></div>
-    <div class="cb"><div class="cn">42<em>m</em></div><div class="cl">Hauteur de la cascade — la plus haute de Provence</div></div>
-    <div class="cb"><div class="cn">1,3<em>M€</em></div><div class="cl">Investissement pour les aménagements de protection du site</div></div>
-    <div class="cb"><div class="cn">↑<em>∞</em></div><div class="cl">Fréquentation touristique en hausse constante · pression croissante</div></div>
+    <div class="cb"><div class="cn">369<em>ha</em></div><div class="cl">Espace Naturel Sensible · Conseil Départemental du Var</div></div>
+    <div class="cb"><div class="cn">42<em>m</em></div><div class="cl">Hauteur de chute · plus haute cascade de Provence</div></div>
+    <div class="cb"><div class="cn">1,3<em>M€</em></div><div class="cl">Investissement · aménagements de protection</div></div>
+    <div class="cb"><div class="cn">↑<em>∞</em></div><div class="cl">Fréquentation en hausse · pression anthropique croissante</div></div>
   </div>
 </div>
 
-<!-- ══ S3 PROBLÉMATIQUES ══ -->
+<!-- S3 PROBLEMATIQUES -->
 <div class="sl" id="s3">
   <div class="pb-side pb-red" data-i="1">
-    <div class="pb-ico">📸</div>
     <div class="pb-t">Pression touristique</div>
     <div class="pb-list">
-      <div class="pb-li">Stagnation aux zones critiques</div>
-      <div class="pb-li">Dégradation des travertins millénaires</div>
-      <div class="pb-li">Visiteur « consommateur de paysage »</div>
-      <div class="pb-li">Interdictions ignorées ou contestées</div>
-      <div class="pb-li">Signalétique perçue comme punitive</div>
+      <div class="pb-li">Zones critiques saturées</div>
+      <div class="pb-li">Travertins millénaires dégradés</div>
+      <div class="pb-li">Passage rapide · aucune immersion</div>
+      <div class="pb-li">Interdictions ignorées</div>
+      <div class="pb-li">Signalétique punitive</div>
     </div>
   </div>
   <div class="pb-vs">vs</div>
   <div class="pb-side pb-grn" data-i="2">
-    <div class="pb-ico">🌿</div>
     <div class="pb-t">Fragilité écologique</div>
     <div class="pb-list">
-      <div class="pb-li">Travertins calcaires · formation sur 10 000 ans</div>
-      <div class="pb-li">Écrevisse à pieds blancs · espèce protégée</div>
-      <div class="pb-li">Baignade &amp; feu strictement interdits</div>
-      <div class="pb-li">ENS directement menacé par l'érosion anthropique</div>
-      <div class="pb-li">Arrêté préfectoral — force de loi</div>
+      <div class="pb-li">Travertins · 10 000 ans de formation</div>
+      <div class="pb-li">Écrevisse à pieds blancs · protégée</div>
+      <div class="pb-li">Baignade · feu · interdits</div>
+      <div class="pb-li">ENS menacé · érosion anthropique</div>
+      <div class="pb-li">Arrêté préfectoral en vigueur</div>
     </div>
   </div>
 </div>
 
-<!-- ══ S4 DEMANDE ══ -->
+<!-- S4 DEMANDE -->
 <div class="sl" id="s4">
   <div class="tag" data-i="1" style="align-self:flex-start">Commanditaire — Département du Var</div>
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:30px">4 livrables <span class="acc">attendus</span></h2>
   <div class="dem-grid">
-    <div class="dm" data-i="3"><div class="dn">01</div><div class="di">🎨</div><div class="dt"><strong>Identité graphique complète</strong><span>Logo · charte · mascotte</span></div></div>
-    <div class="dm" data-i="4"><div class="dn">02</div><div class="di">📣</div><div class="dt"><strong>Plan de communication</strong><span>Réseaux sociaux · flyers · panneaux</span></div></div>
-    <div class="dm" data-i="5"><div class="dn">03</div><div class="di">📱</div><div class="dt"><strong>Application interactive PWA</strong><span>Carte GPS · médiation · parcours narratif</span></div></div>
-    <div class="dm" data-i="6"><div class="dn">04</div><div class="di">🧭</div><div class="dt"><strong>Médiation in situ</strong><span>Transformer le visiteur · légitimer les interdits</span></div></div>
+    <div class="dm" data-i="3"><div class="dn">01</div><div class="dt"><strong>Identité graphique</strong><span>Logo · charte · mascotte</span></div></div>
+    <div class="dm" data-i="4"><div class="dn">02</div><div class="dt"><strong>Plan de communication</strong><span>Réseaux sociaux · flyers · panneaux</span></div></div>
+    <div class="dm" data-i="5"><div class="dn">03</div><div class="dt"><strong>Application PWA</strong><span>Carte GPS · médiation · parcours narratif</span></div></div>
+    <div class="dm" data-i="6"><div class="dn">04</div><div class="dt"><strong>Médiation in situ</strong><span>Visiteur acteur · interdits légitimés</span></div></div>
   </div>
 </div>
 
-<!-- ══ S5 CONCEPT ══ -->
+<!-- S5 CONCEPT -->
 <div class="sl" id="s5">
   <div class="tag" data-i="1" style="align-self:flex-start">Notre proposition</div>
   <div class="cw" data-i="2">
     <div class="cx before">
       <img src="https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/cascade-chute.webp">
-      <div class="cx-ico">📷</div>
       <div class="cx-l">Avant</div>
       <div class="cx-t">Le spot cascade</div>
       <div class="cx-d">Un point de vue · une photo · passage rapide</div>
@@ -358,116 +324,114 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
     <div class="c-arr">→</div>
     <div class="cx after">
       <img src="https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/riviere.webp">
-      <div class="cx-ico">🚶</div>
       <div class="cx-l">Notre concept</div>
       <div class="cx-t">Le sentier vivant</div>
       <div class="cx-d">3,3 km · 10 POI · 1h30 · immersion narrative</div>
     </div>
   </div>
   <div class="pillars" data-i="3">
-    <div class="pill"><div class="pill-n">01</div><div class="pill-t">Induire le mouvement · décongestionner le belvédère</div></div>
-    <div class="pill"><div class="pill-n">02</div><div class="pill-t">Transformer le visiteur en acteur de la protection</div></div>
-    <div class="pill"><div class="pill-n">03</div><div class="pill-t">Légitimer les interdits par le storytelling</div></div>
+    <div class="pill"><div class="pill-n">01</div><div class="pill-t">Induire le mouvement · décongestionner</div></div>
+    <div class="pill"><div class="pill-n">02</div><div class="pill-t">Visiteur acteur de la protection</div></div>
+    <div class="pill"><div class="pill-n">03</div><div class="pill-t">Légitimer les interdits par le récit</div></div>
   </div>
 </div>
 
-<!-- ══ S6 AUDIT DE LA CIBLE ══ -->
+<!-- S6 AUDIT DE LA CIBLE -->
 <div class="sl" id="s6">
   <div class="tag" data-i="1" style="align-self:flex-start">Audit de la cible — 3 profils identifiés</div>
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:24px">Qui vient à <span class="acc">Sillans</span>, pourquoi, et quel impact ?</h2>
   <div class="persona-grid">
     <div class="persona" data-i="3">
       <div class="p-top">
-        <div class="p-av av1">📱</div>
+        <div class="p-av av1">SI</div>
         <div><div class="p-name">L'Instagramer</div><div class="p-sub">Social Impulsif · TikTok / Instagram</div></div>
       </div>
       <div class="p-quote">« Faire la même vidéo que l'influenceur. »</div>
       <div class="p-tags">
-        <div class="p-tag">Jeune, urbain</div>
+        <div class="p-tag">Jeune · urbain</div>
         <div class="p-tag">Chasseur de spots</div>
-        <div class="p-tag">Hors-sentier pour l'angle photo</div>
+        <div class="p-tag">Hors-sentier · angle photo</div>
       </div>
-      <div class="p-impact impact-hi">🔴 Impact ÉLEVÉ — piétinement, zones interdites</div>
+      <div class="p-impact impact-hi">Impact élevé · piétinement · zones interdites</div>
     </div>
     <div class="persona" data-i="4">
       <div class="p-top">
-        <div class="p-av av2">🗺️</div>
+        <div class="p-av av2">NP</div>
         <div><div class="p-name">Le Visiteur GPS</div><div class="p-sub">Numérique Passif · Google Maps / Blogs</div></div>
       </div>
       <div class="p-quote">« Quoi faire autour de moi ? » — suit son GPS sans chercher d'infos.</div>
       <div class="p-tags">
-        <div class="p-tag">Famille, touriste de passage</div>
-        <div class="p-tag">Blogs non mis à jour (2022)</div>
-        <div class="p-tag">Google Maps dit "Ouvert"</div>
+        <div class="p-tag">Famille · touriste</div>
+        <div class="p-tag">Blogs non mis à jour</div>
+        <div class="p-tag">Google Maps : « Ouvert »</div>
       </div>
-      <div class="p-impact impact-md">🟡 Impact MOYEN — baignade si non signalé</div>
+      <div class="p-impact impact-md">Impact moyen · baignade si non signalé</div>
     </div>
     <div class="persona" data-i="5">
       <div class="p-top">
-        <div class="p-av av3">📄</div>
+        <div class="p-av av3">HP</div>
         <div><div class="p-name">L'Explorateur</div><div class="p-sub">Héritage Papier · Flyers / Hébergeurs</div></div>
       </div>
-      <div class="p-quote">« Suivre l'itinéraire conseillé par le gîte. » — déjà en démarche active.</div>
+      <div class="p-quote">« Suivre l'itinéraire conseillé par le gîte. »</div>
       <div class="p-tags">
-        <div class="p-tag">Senior, randonneur, curiste</div>
-        <div class="p-tag">Respecte les sentiers balisés</div>
+        <div class="p-tag">Senior · randonneur</div>
+        <div class="p-tag">Sentiers balisés</div>
         <div class="p-tag">Réceptif à la médiation</div>
       </div>
-      <div class="p-impact impact-lo">🟢 Impact FAIBLE — profil à valoriser</div>
+      <div class="p-impact impact-lo">Impact faible · profil à valoriser</div>
     </div>
   </div>
 </div>
 
-<!-- ══ S7 ENTONNOIR COMMUNICATION ══ -->
+<!-- S7 ENTONNOIR -->
 <div class="sl" id="s7">
   <div class="tag" data-i="1" style="align-self:flex-start">Stratégie de communication</div>
   <h2 data-i="2" style="align-self:flex-start;margin-bottom:28px">Entonnoir <span class="acc">par profil</span></h2>
   <div style="display:flex;gap:44px;width:100%;max-width:1200px">
     <div class="funnel-left" data-i="3">
       <div class="fs">
-        <div class="fs-band fs1"><div class="fs-ico">📱</div><div><div class="fs-t">Réseaux Sociaux</div><div class="fs-d">Désaturation cascade · branding «&nbsp;randonnée technique&nbsp;»</div></div></div>
+        <div class="fs-band fs1"><div><div class="fs-t">Réseaux Sociaux</div><div class="fs-d">Désaturation cascade · branding « randonnée »</div></div></div>
         <div class="fs-arrow">↓</div>
       </div>
       <div class="fs">
-        <div class="fs-band fs2"><div class="fs-ico">📄</div><div><div class="fs-t">Flyers — Offices de tourisme</div><div class="fs-d">QR code · message «&nbsp;La cascade se mérite&nbsp;»</div></div></div>
+        <div class="fs-band fs2"><div><div class="fs-t">Flyers — Offices de tourisme</div><div class="fs-d">QR code · « La cascade se mérite »</div></div></div>
         <div class="fs-arrow">↓</div>
       </div>
       <div class="fs">
-        <div class="fs-band fs3"><div class="fs-ico">🪧</div><div><div class="fs-t">Panneaux sur le site</div><div class="fs-d">QR codes à l'entrée du sentier et aux étapes</div></div></div>
+        <div class="fs-band fs3"><div><div class="fs-t">Panneaux sur le site</div><div class="fs-d">QR codes entrée sentier · étapes</div></div></div>
         <div class="fs-arrow">↓</div>
       </div>
       <div class="fs">
-        <div class="fs-band fs4"><div class="fs-ico">🌊</div><div><div class="fs-t">Web App — Le Sentier de Sillans</div><div class="fs-d">Médiation complète · offline · 10 POI</div></div></div>
+        <div class="fs-band fs4"><div><div class="fs-t">Web App — Le Sentier de Sillans</div><div class="fs-d">Médiation complète · offline · 10 POI</div></div></div>
       </div>
     </div>
     <div data-i="4" style="flex:1;display:flex;flex-direction:column;gap:10px;max-width:400px">
       <div class="strat-card">
-        <div class="strat-t">📱 Pour l'Instagramer</div>
+        <div class="strat-t">L'Instagramer</div>
         <div class="strat-items">
-          <div class="strat-item">Désaturer visuellement la cascade sur les RS</div>
-          <div class="strat-item">Vendre la «&nbsp;randonnée sportive&nbsp;», pas le spot</div>
-          <div class="strat-item">SEO «&nbsp;Sentier de Sillans&nbsp;» écrase «&nbsp;Baignade Sillans&nbsp;»</div>
+          <div class="strat-item">Désaturer la cascade sur les RS</div>
+          <div class="strat-item">Valoriser la « randonnée sportive », pas le spot</div>
+          <div class="strat-item">SEO « Sentier de Sillans » &gt; « Baignade Sillans »</div>
         </div>
       </div>
       <div class="strat-card">
-        <div class="strat-t">🗺️ Pour le Visiteur GPS</div>
+        <div class="strat-t">Le Visiteur GPS</div>
         <div class="strat-items">
           <div class="strat-item">Mise à jour Google Maps · mention interdiction</div>
-          <div class="strat-item">Page d'alerte rouge sur requêtes "baignade"</div>
+          <div class="strat-item">Page d'alerte sur requêtes « baignade »</div>
         </div>
       </div>
       <div class="strat-card">
-        <div class="strat-t">📄 Pour l'Explorateur</div>
+        <div class="strat-t">L'Explorateur</div>
         <div class="strat-items">
-          <div class="strat-item">Approche «&nbsp;Explorateur Éclairé&nbsp;»</div>
-          <div class="strat-item">Flyer codes topoguide · biodiversité · technicité</div>
+          <div class="strat-item">Flyer topoguide · biodiversité · technicité</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══ S8 LOGO ══ -->
+<!-- S8 LOGO -->
 <div class="sl" id="s8">
   <div class="tag" data-i="1" style="align-self:flex-start">Charte graphique · Logotype</div>
   <h2 data-i="2" style="align-self:flex-start">Le tracé du <span class="acc">sentier</span></h2>
@@ -479,39 +443,39 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
     </div>
     <div class="lv llg">
       <img src="https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/logo.svg" style="filter:invert(1) hue-rotate(170deg) saturate(.8)">
-      <div class="lv-t">Inversée — Impression</div>
+      <div class="lv-t">Impression</div>
       <div class="lv-d" style="color:rgba(0,0,0,.4)">Fond clair · flyers · supports papier</div>
     </div>
     <div class="lv lgr">
       <img src="https://raw.githubusercontent.com/gabinstf/le-sentier-de-sillans/main/images/logo.svg">
       <div class="lv-t">Header App</div>
-      <div class="lv-d">Format horizontal · barre de navigation</div>
+      <div class="lv-d">Horizontal · barre de navigation</div>
     </div>
   </div>
-  <div class="logo-note" data-i="4">Les <strong>pointillés</strong> symbolisent le cheminement physique — la cascade n'est qu'une étape d'un récit plus vaste</div>
+  <div class="logo-note" data-i="4">Les <strong>pointillés</strong> symbolisent le cheminement — la cascade n'est qu'une étape d'un récit plus vaste</div>
 </div>
 
-<!-- ══ S9 COULEURS ══ -->
+<!-- S9 COULEURS -->
 <div class="sl" id="s9" style="padding:0">
   <div class="cs cs1" data-i="1">
     <div class="cs-bar"></div>
     <div class="cs-hex">#03658C</div><div class="cs-name">Bleu Profond</div>
-    <div class="cs-role">Socle · header · interface<br>Profondeur des eaux souterraines</div>
+    <div class="cs-role">Socle · header · interface<br>Eaux souterraines</div>
   </div>
   <div class="cs cs2" data-i="2">
     <div class="cs-bar"></div>
     <div class="cs-hex">#48ADCC</div><div class="cs-name">Bleu Turquoise</div>
-    <div class="cs-role">Actions · highlights · trail<br>Les vasques turquoise de la Bresque</div>
+    <div class="cs-role">Actions · highlights · trail<br>Vasques de la Bresque</div>
   </div>
   <div class="cs cs3" data-i="3">
     <div class="cs-bar"></div>
     <div class="cs-hex" style="color:var(--dk)">#F2F2F2</div><div class="cs-name" style="color:var(--dk)">Gris Clair</div>
-    <div class="cs-role" style="color:rgba(0,0,0,.35)">Fond · lisibilité extérieur<br>Contraste maximal sous lumière forte</div>
+    <div class="cs-role" style="color:rgba(0,0,0,.35)">Fond · lisibilité extérieur<br>Contraste maximal · plein soleil</div>
   </div>
   <div class="cs cs4" data-i="4">
     <div class="cs-bar"></div>
     <div class="cs-hex">#2a3540</div><div class="cs-name">Ardoise</div>
-    <div class="cs-role">Textes · contrastes<br>La roche et le minéral</div>
+    <div class="cs-role">Textes · contrastes<br>Roche · minéral</div>
   </div>
   <div class="cs cs5" data-i="5">
     <div class="cs-bar"></div>
@@ -520,14 +484,14 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
   </div>
 </div>
 
-<!-- ══ S10 TYPOGRAPHIES ══ -->
+<!-- S10 TYPOGRAPHIES -->
 <div class="sl" id="s10" style="padding:0">
   <div class="ty" data-i="1">
     <div class="ty-bg m">Aa</div>
     <div class="ty-role">Titres &amp; Logo</div>
     <div class="ty-samp m">Sillans</div>
     <div class="ty-name m">Marky Regular</div>
-    <div class="ty-usage">H1 · H2 · boutons principaux<br>Sans-sérif artistique, courbes originales</div>
+    <div class="ty-usage">H1 · H2 · boutons principaux<br>Sans-sérif artistique · courbes originales</div>
     <div class="ty-abc" style="font-family:'Marky',sans-serif">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz · 0123456789</div>
   </div>
   <div class="ty" data-i="2">
@@ -535,7 +499,7 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
     <div class="ty-role">Sous-titres &amp; UI</div>
     <div class="ty-samp ob">Sentier</div>
     <div class="ty-name ob">Outfit Bold</div>
-    <div class="ty-usage">Boutons · labels · étiquettes<br>Pivot entre titre et corps de texte</div>
+    <div class="ty-usage">Boutons · labels · étiquettes<br>Pivot titre / corps de texte</div>
     <div class="ty-abc" style="font-family:'Outfit',sans-serif;font-weight:700">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz · 0123456789</div>
   </div>
   <div class="ty" data-i="3">
@@ -543,59 +507,59 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
     <div class="ty-role">Corps de texte</div>
     <div class="ty-samp or">Nature</div>
     <div class="ty-name or">Outfit Regular</div>
-    <div class="ty-usage">Paragraphes · descriptions POI<br>Lisibilité universelle · touristes internationaux</div>
+    <div class="ty-usage">Paragraphes · descriptions POI<br>Lisibilité universelle</div>
     <div class="ty-abc" style="font-family:'Outfit',sans-serif;font-weight:400">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz · 0123456789</div>
   </div>
 </div>
 
-<!-- ══ S11 PARCOURS UTILISATEUR ══ -->
+<!-- S11 PARCOURS UTILISATEUR -->
 <div class="sl psl" id="s11">
   <div class="pinfo">
     <div class="tag" data-i="1">Parcours utilisateur</div>
     <h2 data-i="2">Du parking<br><span class="acc">à la cascade</span></h2>
-    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Accueil &amp; onboarding</strong><span>Avertissement connectivité · choix téléchargement hors-ligne · splash screen</span></div></div>
-    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Carte interactive</strong><span>Vue d'ensemble · météo temps réel · 10 marqueurs POI différenciés</span></div></div>
-    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Découverte progressive</strong><span>Chaque POI validé débloque le suivant · glow animé sur la carte · galerie d'images</span></div></div>
-    <div class="uxp" data-i="6"><div class="uxd"></div><div class="uxt"><strong>Bilan &amp; statistiques</strong><span>Distance · durée · étapes validées · progression gamifiée</span></div></div>
+    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Accueil &amp; onboarding</strong><span>Connectivité · téléchargement offline · splash</span></div></div>
+    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Carte interactive</strong><span>Météo temps réel · 10 marqueurs POI</span></div></div>
+    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Découverte progressive</strong><span>POI validé → suivant débloqué · galerie · glow carte</span></div></div>
+    <div class="uxp" data-i="6"><div class="uxd"></div><div class="uxt"><strong>Bilan</strong><span>Distance · durée · étapes validées</span></div></div>
   </div>
 </div>
 
-<!-- ══ S12 UX / UI ══ -->
+<!-- S12 UX / UI -->
 <div class="sl psl" id="s12">
   <div class="pinfo">
     <div class="tag" data-i="1">UX &amp; UI — Justifications terrain</div>
     <h2 data-i="2">Pensé pour<br><span class="acc">la marche</span></h2>
-    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Lisibilité extérieur</strong><span>Fond #F2F2F2 · sans-sérif · cibles tactiles 44px minimum · contraste élevé sous soleil</span></div></div>
-    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Navigation à une main</strong><span>Footer ancré en bas · retour carte en 1 tap · ergonomie pour l'utilisateur en mouvement</span></div></div>
-    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Hiérarchie d'information</strong><span>Étape → Titre Marky → Corps Outfit · lecture progressive · pas de surcharge cognitive</span></div></div>
-    <div class="uxp" data-i="6"><div class="uxd"></div><div class="uxt"><strong>Animations signifiantes</strong><span>Swipe 0.32s · glow POI suivant · scale modale · chaque animation communique un état</span></div></div>
+    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Lisibilité extérieur</strong><span>Fond #F2F2F2 · cibles 44px · contraste soleil</span></div></div>
+    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Navigation à une main</strong><span>Footer bas · retour carte en 1 tap</span></div></div>
+    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Hiérarchie d'information</strong><span>Étape → Titre Marky → Corps Outfit · pas de surcharge</span></div></div>
+    <div class="uxp" data-i="6"><div class="uxd"></div><div class="uxt"><strong>Animations signifiantes</strong><span>Swipe 0.32s · glow POI · scale modale</span></div></div>
   </div>
 </div>
 
-<!-- ══ S13 FONCTIONNALITÉS ══ -->
+<!-- S13 FONCTIONNALITES -->
 <div class="sl psl" id="s13">
   <div class="pinfo">
     <div class="tag" data-i="1">Fonctionnalités uniques</div>
     <h2 data-i="2">Ce qui rend l'app<br><span class="acc">indispensable</span></h2>
-    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Mode hors-ligne complet</strong><span>Service Worker · préchargement à l'accueil · 0 réseau requis sur tout le parcours</span></div></div>
-    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Validation gamifiée des étapes</strong><span>10 étapes · confirmation modale · annulation en cascade · progression visible et motivante</span></div></div>
-    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Météo contextuelle temps réel</strong><span>Conditions du jour via API · informe le randonneur avant et pendant le parcours</span></div></div>
-    <div class="uxp" data-i="6"><div class="uxd"></div><div class="uxt"><strong>Interdictions dynamiques sur la carte</strong><span>Baignade &amp; feu · icônes expansibles · intégrés sans parasiter la vue de la carte</span></div></div>
+    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Mode hors-ligne complet</strong><span>Service Worker · 0 réseau requis sur le parcours</span></div></div>
+    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Validation gamifiée</strong><span>10 étapes · modale · progression motivante</span></div></div>
+    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Météo contextuelle</strong><span>API temps réel · avant et pendant le parcours</span></div></div>
+    <div class="uxp" data-i="6"><div class="uxd"></div><div class="uxt"><strong>Interdictions dynamiques</strong><span>Baignade · feu · icônes expansibles sur la carte</span></div></div>
   </div>
 </div>
 
-<!-- ══ S14 ESTHÉTISME & CARTE ══ -->
+<!-- S14 ESTHETISME -->
 <div class="sl psl" id="s14">
   <div class="pinfo">
     <div class="tag" data-i="1">Esthétisme &amp; choix artistiques</div>
     <h2 data-i="2">Une interface qui<br>s'<span class="acc">efface</span> devant<br>la nature</h2>
-    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Minimalisme volontaire</strong><span>L'app ne rivalise pas avec le site · médiation sobre demandée par le Département du Var</span></div></div>
-    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Carte illustrée</strong><span>Rendu graphique plutôt que satellitaire · lisibilité immédiate · identité visuelle cohérente</span></div></div>
-    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Dégradé signature</strong><span>160deg turquoise→bleu profond · appliqué sur les vignettes POI · cohérence de la charte</span></div></div>
+    <div class="uxp" data-i="3"><div class="uxd"></div><div class="uxt"><strong>Minimalisme volontaire</strong><span>Ne rivalise pas avec le site · sobre · discret</span></div></div>
+    <div class="uxp" data-i="4"><div class="uxd"></div><div class="uxt"><strong>Carte illustrée</strong><span>Graphique vs satellitaire · identité visuelle cohérente</span></div></div>
+    <div class="uxp" data-i="5"><div class="uxd"></div><div class="uxt"><strong>Dégradé signature</strong><span>Turquoise→bleu profond · vignettes POI · charte</span></div></div>
   </div>
 </div>
 
-<!-- ══ S15 CONCLUSION ══ -->
+<!-- S15 CONCLUSION -->
 <div class="sl" id="s15">
   <div class="glow1"></div><div class="glow2"></div>
   <div class="conc">
@@ -603,14 +567,14 @@ h2{font-family:'Marky',sans-serif;font-size:clamp(26px,3.5vw,50px);color:#fff;li
     <h1 data-i="2">Un outil au service<br>du <em>sanctuaire</em></h1>
     <div class="sub" data-i="3">Médiation numérique sobre · protection par la découverte</div>
     <div class="vals" data-i="4">
-      <div class="val">🌿 Sobriété</div>
-      <div class="val">🧭 Mobilité douce</div>
-      <div class="val">🎓 Médiation</div>
-      <div class="val">💧 ENS protégé</div>
+      <div class="val">Sobriété</div>
+      <div class="val">Mobilité douce</div>
+      <div class="val">Médiation</div>
+      <div class="val">ENS protégé</div>
     </div>
     <div class="links" data-i="5">
-      <a class="lnk" href="https://gabinstf.github.io/le-sentier-de-sillans/" target="_blank">🌐 L'application</a>
-      <a class="lnk" href="https://aiittto0.github.io/sillans-diapositive/" target="_blank">📊 Ce support</a>
+      <a class="lnk" href="https://gabinstf.github.io/le-sentier-de-sillans/" target="_blank">L'application</a>
+      <a class="lnk" href="https://aiittto0.github.io/sillans-diapositive/" target="_blank">Ce support</a>
     </div>
     <div class="end" data-i="6">Merci · Questions ?</div>
   </div>
@@ -623,7 +587,7 @@ const SL = Array.from(document.querySelectorAll('.sl'));
 const N  = SL.length;
 let cur = 0, busy = false;
 
-const PHONE_RANGE = [10,11,12,13]; // S11–S14
+const PHONE_RANGE = [10,11,12,13];
 
 const TF = [
   ['in-fade','out-fade'],
